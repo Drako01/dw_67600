@@ -1,0 +1,22 @@
+.header{
+    background-color: $primary-color;
+    padding: 1rem;
+
+    h1{
+        color: white;
+    }
+
+    .nav{
+        margin-top: .5rem;
+
+        a{
+            margin-right: 1rem;
+            color: $second-color;
+
+            &:hover{
+                color: white;
+            }
+        }
+    }
+
+}

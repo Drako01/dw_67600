@@ -1,0 +1,47 @@
+.hero {
+    @include flex-center;
+    flex-direction: column;
+    height: 300px;
+    background-color: $second-color;
+    text-align: center;
+}
+
+.footer {
+    @include flex-center;
+    background-color: $primary-color;
+    padding: 1rem;
+    color: white;
+}
+
+// Bucles y Each
+$menu-items: (
+    'Latte',
+    'Capuchino',
+    'Te',
+    'Latte',
+    'Chocolate',
+    'Tortas'
+);
+
+.menu {
+    padding: 2rem;
+    text-align: center;
+
+    .menu-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-top: 1rem;
+
+        @each $item in $menu-items {
+            .#{$item} {
+                padding: 1rem;
+                background-color: $second-color;
+                border-radius: $border-radius;
+                @include flex-center;
+                font-weight: bold;
+            }
+        }
+
+    }
+}
