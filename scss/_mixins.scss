@@ -4,6 +4,17 @@
     align-items: center;
 }
 
+
+@mixin flex-center-row {
+    @include flex-center;
+    flex-direction: row;
+}
+
+@mixin flex-center-column {
+    @include flex-center;
+    flex-direction: column;
+}
+
 @mixin button-style($bg-color){
     border-color: $bg-color;
     color: white;

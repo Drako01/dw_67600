@@ -1,6 +1,5 @@
 .hero {
-    @include flex-center;
-    flex-direction: column;
+    @include flex-center-column;
     height: 300px;
     background-color: $second-color;
     text-align: center;
