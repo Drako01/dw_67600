@@ -1,8 +1,19 @@
 .hero {
     @include flex-center-column;
-    height: 300px;
+    height: 480px;
     background-color: $second-color;
     text-align: center;
+
+    .logo{
+        margin-top: 1rem;
+        @include flex-center;
+
+        img{
+            width: 240px;
+            height: auto;
+            
+        }
+    }
 }
 
 .footer {

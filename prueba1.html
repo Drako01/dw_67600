@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones</title>
+    <style>
+        /* .pelota{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            border-radius: 50%;
+            margin: 100px;
+            animation: rebotar 2s 1s infinite;
+        }
+
+        @keyframes rebotar{
+            0% { transform: translateY(0);}
+            50% {transform: translateY(-200px);}
+            100% {transform: translateY(0);}
+        } */
+        .cuadro {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border-radius: 1rem;
+            margin: 100px;
+            transition: background-color 1s ease;
+            animation: girar 3s ease-in-out 2s infinite alternate;
+        }
+
+        @keyframes girar {
+            from {
+                transform: rotate(0deg) scale(1);
+                background-color: purple;
+            }
+            to {
+                transform: rotate(360deg) scale(1.5);
+                background-color: orange;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="pelota"></div> -->
+    <div class="cuadro"></div>
+</body>
+
+</html>

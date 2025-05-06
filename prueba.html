@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .caja{
+            width: 120px;
+            height: 120px;
+            margin: 50px;
+            background-color: red;
+            /* transition: background-color 0.5s ease, transform 1s ease-in-out; */
+            transition: all 1s ease-in;
+        }
+        .caja:hover{
+            background-color: blue;
+            /* transform: scale(1.2); */
+            transform: rotate(45deg) scale(1.2) translate(20px, 10px);
+            color: beige;            
+        }
+
+        p{
+            padding: 1rem;
+            /* transition: color 2s ease; */
+        }
+        /* h4{
+            transition: color 3s ease;
+        } */
+        
+    </style>
+</head>
+<body>
+    <div class="caja">
+        <h4>Subtitulo</h4>
+        <p>Lorem ipsum, dolorriatur!</p>
+    </div>
+</body>
+</html>
