@@ -4,41 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffe Time</title>
+
+    <title>Coffe Time | Bienvenidos</title>
+    <meta name="description"
+        content="Coffe Time es tu lugar para relajarte y tomarte un rico cafe, disfrutar de estar en grupo de amigos. Deleitarte con rica pasteleria.">
+    <meta name="author" content="Alejandro Di Stefano">
+    <meta name="keywords" content="Cafe, Cafeteria, capuchino, latte, té, Chocolate, tortas">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Etiquetas canonicas -->
+    <link rel="canonical" href="https://coffetime.com">
+
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/img/logo.webp" type="image/webp">
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" role="banner">
         <h1>Coffe Time</h1>
-        <nav class="nav">
+        <nav class="nav" role="navigation" aria-label="Navegación Principal">
             <a href="#">Inicio</a>
             <a href="#">Menu</a>
             <a href="#">Contacto</a>
         </nav>
     </header>
-    <section class="hero">
-        <h2>Bienvenido a Coffe Time.!!</h2>
-        <p>Tu lugar favorito para relajarte y tomarte un buen café</p>
+    <main role="main" id="contenido-principal">
+        <section class="hero" id="inicio" aria-labelledby="titulo-inicio">
+            <h2 id="titulo-inicio" >Bienvenido a Coffe Time.!!</h2>
+            <p>Tu lugar favorito para relajarte y tomarte un buen café</p>
 
-        <figure class="logo">
-            <img src="assets/img/logo.png" alt="Logo de Cafe Time">
-        </figure>
-    </section>
+            <figure class="logo" role="img" aria-label="Logo principal de la Cafeteria">
+                <source srcset="assets/img/logo.webp" type="image/webp">
+                <picture>
+                    <img src="assets/img/logo.webp" alt="Logo de Cafe Time" width="240" height="240">
+                </picture>
+            </figure>
+        </section>
 
-    <section class="menu">
-        <h2>Nuestro Menú</h2>
-        <div class="menu-items">
-            <div class="Latte">Café Latte</div>
-            <div class="Capuchino">Capuchino</div>
-            <div class="Te">Te Oriental</div>
-            <div class="Latte">Latte</div>
-            <div class="Chocolate">Chocolate Caliente</div>
-            <div class="Tortas">Tortas</div>
-        </div>
-    </section>
-
-    <footer class="footer">
+        <section class="menu" id="menu" aria-labelledby="titulo-menu">
+            <h2 id="titulo-menu">Nuestro Menú</h2>
+            <div class="menu-items">
+                <article role="article" aria-label="Latte" class="Latte">Café Latte</article>
+                <article role="article" aria-label="Capuchino" class="Capuchino">Capuchino</article>
+                <article role="article" aria-label="Te" class="Te">Te Oriental</article>
+                <article role="article" aria-label="Latte" class="Latte">Latte</article>
+                <article role="article" aria-label="Chocolate" class="Chocolate">Chocolate Caliente</article>
+                <article role="article" aria-label="Tortas" class="Tortas">Tortas</article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" role="contentinfo">
         <p>&copy; 2025 Coffe Time. Todos los derechos reservados.</p>
     </footer>
 </body>
