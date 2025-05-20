@@ -1,11 +1,12 @@
-@import  '_variables';
-@import  '_mixins';
-@import  '_base';
-@import  '_layout';
-@import  '_components';
-@import  '_transforms';
-@import '_animations';
-
+@import  './base/_variables';
+@import  './base/_mixins';
+@import  './base/_base';
+@import  './layout/_header';
+@import  './layout/_main';
+@import  './layout/_footer';
+@import  './components/_components';
+@import './efects/_animations';
+@import './efects/_transforms';
 
 /* 
     Desarrollado por Alejandro Di Stefano
